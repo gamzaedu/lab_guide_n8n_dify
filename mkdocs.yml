@@ -71,6 +71,17 @@ nav:
           - Lab 19 · Gmail 노드: lab_19_gmail.md
           - Lab 20 · Slack 알림: lab_20_slack.md
           - Lab 21 · OpenAI 노드: lab_21_openai.md
+      - 프로젝트:
+          - Project 01 · 주간 업무 리포트 자동화: project_n8n_01_weekly_report.md
+          - Project 02 · 공문 메일 자동 분류·요약: project_n8n_02_mail_classifier.md
+          - Project 03 · 영수증 지출 정리 봇: project_n8n_03_receipt_bot.md
+          - Project 04 · 회의록 자동 정리·공유: project_n8n_04_meeting_minutes.md
+          - Project 05 · 보도자료/공문 초안 생성기: project_n8n_05_draft_generator.md
+          - Project 06 · 설문 응답 취합 & 리포트: project_n8n_06_survey_aggregator.md
+          - Project 07 · 민원 자동 분류 & 배정: project_n8n_07_minwon_classifier.md
+          - Project 08 · 민원 처리 기한 알림: project_n8n_08_deadline_reminder.md
+          - Project 09 · 법령·정책 변동 모니터링: project_n8n_09_policy_monitor.md
+          - Project 10 · 뉴스 여론 모니터링 대시보드: project_n8n_10_news_dashboard.md
   - Dify 실습:
       - 기초:
           - Lab 01 · Dify 시작하기 & 첫 챗봇: lab_dify_01_intro_and_first_chatbot.md
