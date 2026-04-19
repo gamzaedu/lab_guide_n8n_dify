@@ -1,23 +1,65 @@
-# n8n 실습 가이드
+# n8n · Dify 업무자동화 실습 가이드
 
-n8n/dify 기반 업무자동화 워크플로우 실습 문서입니다.
+5일 동안 n8n과 Dify를 이용해 직접 업무자동화 워크플로우를 만들어 봅니다.
 
-## 실습 목차
+## 과정 개요
 
-- [Lab 01. 첫 워크플로우 만들기](lab_01_first_workflow.md) — Manual Trigger와 OpenAI 노드를 연결하여 첫 워크플로우를 제작합니다.
+| 항목 | 내용 |
+|------|------|
+| 대상 | 공무원 (IT/비IT 직군 혼합, 사전지식 불필요) |
+| 기간 | 5일 / 총 32시간 (1~4일차 7시간, 5일차 4시간) |
+| 주제 | n8n·Dify 기반 업무자동화 워크플로우 제작 |
+| 사용 도구 | ChatGPT(유료), n8n Cloud, Dify Cloud |
+| 실습 수 | n8n 21개 + Dify 15개 (총 36개 Lab) |
 
-## 로컬 미리보기 방법
+## 학습 목표
 
-```bash
-# 1. MkDocs Material 설치
-pip install mkdocs-material
+- 반복 업무를 **n8n 워크플로우**로 자동화할 수 있다 (Trigger·HTTP·IF·Code·외부 서비스 연동).
+- **Dify**로 챗봇과 지식기반 QA 봇, Agent 앱을 만들 수 있다.
+- n8n과 Dify를 **연동**해 실제 업무 시나리오를 해결하는 통합 워크플로우를 설계할 수 있다.
 
-# 2. 프로젝트 폴더로 이동
-cd mkdocs_new
+## 실습 진행 방식
 
-# 3. 로컬 서버 실행 (http://127.0.0.1:8000)
-mkdocs serve
+!!! info "각 Lab은 다음 4단계로 진행됩니다"
+    1. **Step 1. 탐색하기** — 가이드를 따라 직접 손으로 만들어 봅니다.
+    2. **Step 2. 분석과 성찰** — 결과물을 동료·AI와 비교하며 관찰합니다.
+    3. **Step 3. 창조하기** — 나의 상황에 맞게 변형·확장해 봅니다.
+    4. **Beyond Level. 연구하기** — (선택) 심화 질문을 스스로 탐구합니다.
 
-# 4. 정적 사이트 빌드 (site/ 폴더 생성)
-mkdocs build
-```
+완성도보다 시도, 정답보다 관찰을 우선합니다.
+
+## 커리큘럼 맵
+
+### n8n (총 21개 Lab)
+
+| 구분 | 범위 | 핵심 주제 |
+|------|------|-----------|
+| 기초 | Lab 01–05 | 첫 워크플로우, Trigger, Edit Fields, HTTP, Webhook |
+| 중급 — 제어 흐름 & Expression | Lab 06–11 | IF, Switch, Expression, Merge, Loop, Wait |
+| 심화 — Code & Error | Lab 12–16 | Code 노드, 파일 변환, Pagination, Error Trigger, Sub-workflow |
+| 통합 — 외부 서비스 | Lab 17–21 | Credentials, Google Sheets, Gmail, Slack, OpenAI |
+
+### Dify (총 15개 Lab)
+
+| 구분 | 범위 | 핵심 주제 |
+|------|------|-----------|
+| 기초 | Lab 01–03 | 첫 챗봇, 프롬프트 템플릿, 변수 입력 폼 |
+| 지식베이스(RAG) | Lab 04–06 | 지식베이스, 규정 QA 봇, 검색 최적화 |
+| Workflow | Lab 07–10 | 문서 요약, IF/ELSE 분류, Iteration, HTTP Request |
+| Chatflow & Agent | Lab 11–13 | 민원 Chatflow, Agent 기본, 내장 도구 |
+| 통합·실전 | Lab 14–15 | n8n에서 Dify API 호출, 종합 프로젝트 |
+
+Lab별 상세 내용은 왼쪽 네비게이션에서 원하는 Lab을 선택해 열람하세요.
+
+## 사전 준비
+
+!!! tip "수업 전 준비 사항"
+    - [ ] ChatGPT 계정 (유료 플랜 권장)
+    - [ ] n8n Cloud 가입 및 로그인
+    - [ ] Dify Cloud 가입 및 로그인 + 사용 가능한 LLM 모델(OpenAI 등) 연결
+    - [ ] 크롬 등 최신 브라우저
+
+## 시작하기
+
+!!! abstract "첫 실습으로 이동하기"
+    왼쪽 네비게이션에서 **Lab 01 첫 워크플로우**부터 순서대로 진행하는 것을 권장합니다. 이미 익숙한 주제가 있다면 해당 Lab은 건너뛰고 필요한 Lab만 골라 진행해도 됩니다.

@@ -1,4 +1,4 @@
-site_name: n8n 실습 가이드
+site_name: 클릭만으로 완성하는 스마트 업무 자동화
 site_description: n8n/dify 기반 업무자동화 실습 문서
 docs_dir: docs
 
@@ -9,6 +9,8 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.top
+    - navigation.sections
+    - navigation.expand
     - content.code.copy
     - toc.follow
   palette:
@@ -43,53 +45,53 @@ markdown_extensions:
 
 nav:
   - 홈: index.md
-  - 실습:
+  - n8n 실습:
       - 기초:
-          - Lab 01 첫 워크플로우: lab_01_first_workflow.md
-          - Lab 02 Trigger 노드 비교: lab_02_triggers.md
-          - Lab 03 Edit Fields 노드: lab_03_edit_fields.md
-          - Lab 04 HTTP Request 노드: lab_04_http_request.md
-          - Lab 05 Webhook 노드: lab_05_webhook.md
-      - 중급 (제어 흐름 & Expression):
-          - Lab 06 IF 노드: lab_06_if.md
-          - Lab 07 Switch 노드: lab_07_switch.md
-          - Lab 08 Expression 마스터: lab_08_expressions.md
-          - Lab 09 Merge 노드: lab_09_merge.md
-          - Lab 10 Loop / Batches: lab_10_loop_batches.md
-          - Lab 11 Wait 노드: lab_11_wait.md
-      - 심화 (Code & Error):
-          - Lab 12 Code 노드: lab_12_code_node.md
-          - Lab 13 파일 변환: lab_13_file_conversion.md
-          - Lab 14 Pagination: lab_14_pagination.md
-          - Lab 15 Error Trigger: lab_15_error_trigger.md
-          - Lab 16 Sub-workflow: lab_16_sub_workflow.md
-      - 통합 (외부 서비스):
-          - Lab 17 Credentials 관리: lab_17_credentials.md
-          - Lab 18 Google Sheets: lab_18_google_sheets.md
-          - Lab 19 Gmail 노드: lab_19_gmail.md
-          - Lab 20 Slack 알림: lab_20_slack.md
-          - Lab 21 OpenAI 노드: lab_21_openai.md
+          - Lab 01 · 첫 워크플로우: lab_01_first_workflow.md
+          - Lab 02 · Trigger 노드 비교: lab_02_triggers.md
+          - Lab 03 · Edit Fields 노드: lab_03_edit_fields.md
+          - Lab 04 · HTTP Request 노드: lab_04_http_request.md
+          - Lab 05 · Webhook 노드: lab_05_webhook.md
+      - 중급 — 제어 흐름:
+          - Lab 06 · IF 노드: lab_06_if.md
+          - Lab 07 · Switch 노드: lab_07_switch.md
+          - Lab 08 · Expression 마스터: lab_08_expressions.md
+          - Lab 09 · Merge 노드: lab_09_merge.md
+          - Lab 10 · Loop / Batches: lab_10_loop_batches.md
+          - Lab 11 · Wait 노드: lab_11_wait.md
+      - 심화 — Code & Error:
+          - Lab 12 · Code 노드: lab_12_code_node.md
+          - Lab 13 · 파일 변환: lab_13_file_conversion.md
+          - Lab 14 · Pagination: lab_14_pagination.md
+          - Lab 15 · Error Trigger: lab_15_error_trigger.md
+          - Lab 16 · Sub-workflow: lab_16_sub_workflow.md
+      - 통합 — 외부 서비스:
+          - Lab 17 · Credentials 관리: lab_17_credentials.md
+          - Lab 18 · Google Sheets: lab_18_google_sheets.md
+          - Lab 19 · Gmail 노드: lab_19_gmail.md
+          - Lab 20 · Slack 알림: lab_20_slack.md
+          - Lab 21 · OpenAI 노드: lab_21_openai.md
   - Dify 실습:
       - 기초:
-          - Lab 01 Dify 시작하기 & 첫 챗봇: lab_dify_01_intro_and_first_chatbot.md
-          - Lab 02 프롬프트 템플릿 민원 답변: lab_dify_02_prompt_template_minwon.md
-          - Lab 03 변수로 입력 폼 만들기: lab_dify_03_variables_input_form.md
-      - 지식베이스(RAG):
-          - Lab 04 지식베이스 만들기: lab_dify_04_knowledge_base_basics.md
-          - Lab 05 내부 규정 QA 봇: lab_dify_05_regulation_qa_bot.md
-          - Lab 06 검색 설정 최적화: lab_dify_06_search_optimization.md
+          - Lab 01 · Dify 시작하기 & 첫 챗봇: lab_dify_01_intro_and_first_chatbot.md
+          - Lab 02 · 프롬프트 템플릿 민원 답변: lab_dify_02_prompt_template_minwon.md
+          - Lab 03 · 변수로 입력 폼 만들기: lab_dify_03_variables_input_form.md
+      - 지식베이스 (RAG):
+          - Lab 04 · 지식베이스 만들기: lab_dify_04_knowledge_base_basics.md
+          - Lab 05 · 내부 규정 QA 봇: lab_dify_05_regulation_qa_bot.md
+          - Lab 06 · 검색 설정 최적화: lab_dify_06_search_optimization.md
       - Workflow:
-          - Lab 07 첫 Workflow 문서 요약기: lab_dify_07_first_workflow_summary.md
-          - Lab 08 IF/ELSE 민원 분류: lab_dify_08_if_else_classification.md
-          - Lab 09 Iteration 다중 항목 처리: lab_dify_09_iteration_batch.md
-          - Lab 10 HTTP Request 노드: lab_dify_10_http_request.md
+          - Lab 07 · 첫 Workflow 문서 요약기: lab_dify_07_first_workflow_summary.md
+          - Lab 08 · IF/ELSE 민원 분류: lab_dify_08_if_else_classification.md
+          - Lab 09 · Iteration 다중 항목 처리: lab_dify_09_iteration_batch.md
+          - Lab 10 · HTTP Request 노드: lab_dify_10_http_request.md
       - Chatflow & Agent:
-          - Lab 11 다단계 민원 접수 Chatflow: lab_dify_11_chatflow_intake.md
-          - Lab 12 Agent 기본: lab_dify_12_agent_basics.md
-          - Lab 13 내장 도구 활용: lab_dify_13_agent_tools.md
-      - 통합·실전:
-          - Lab 14 n8n에서 Dify API 호출: lab_dify_14_dify_api_from_n8n.md
-          - Lab 15 종합 프로젝트: lab_dify_15_integrated_project.md
+          - Lab 11 · 다단계 민원 접수 Chatflow: lab_dify_11_chatflow_intake.md
+          - Lab 12 · Agent 기본: lab_dify_12_agent_basics.md
+          - Lab 13 · 내장 도구 활용: lab_dify_13_agent_tools.md
+      - 통합 · 실전:
+          - Lab 14 · n8n에서 Dify API 호출: lab_dify_14_dify_api_from_n8n.md
+          - Lab 15 · 종합 프로젝트: lab_dify_15_integrated_project.md
 
 plugins:
   - search:
