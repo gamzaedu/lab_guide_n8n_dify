@@ -103,6 +103,14 @@ nav:
       - 통합 · 실전:
           - Lab 14 · n8n에서 Dify API 호출: lab_dify_14_dify_api_from_n8n.md
           - Lab 15 · 종합 프로젝트: lab_dify_15_integrated_project.md
+      - 프로젝트:
+          - Project 01 · 보도자료 초안 작성 도우미: project_dify_01_press_release_drafter.md
+          - Project 02 · 공문 톤앤매너 변환기: project_dify_02_official_tone_converter.md
+          - Project 03 · 내부 규정/지침 검색 챗봇: project_dify_03_internal_regulation_qa.md
+          - Project 04 · 법령·조례 해석 도우미: project_dify_04_law_interpreter.md
+          - Project 05 · 보고서 자동 구조화 워크플로우: project_dify_05_report_structurer.md
+          - Project 06 · 행사 안내 다국어 챗봇: project_dify_06_event_multilang_bot.md
+          - Project 07 · 신규 직원 온보딩 에이전트: project_dify_07_onboarding_agent.md
 
 plugins:
   - search:
