@@ -111,6 +111,11 @@ nav:
           - Project 05 · 보고서 자동 구조화 워크플로우: project_dify_05_report_structurer.md
           - Project 06 · 행사 안내 다국어 챗봇: project_dify_06_event_multilang_bot.md
           - Project 07 · 신규 직원 온보딩 에이전트: project_dify_07_onboarding_agent.md
+  - 종합 프로젝트:
+      - 시민 문의 통합 처리 봇: project_dify_08_minwon_bot.md
+      - 업무 정보 자동 모니터링: project_n8n_11_info_monitoring.md
+      - 행사 홍보 자동 파이프라인: project_dify_09_event_promo.md
+      - 영수증 OCR 정산 자동화: project_n8n_12_receipt_ocr.md
 
 plugins:
   - search:
